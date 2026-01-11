@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Interactive IT Support Quiz (71 Questions)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="https://static.skywork.ai/fe/skywork-site-assets/styles/doc_reference_style.css?v=2008948221382569984"/>
+</head>
+<body>
+
+<!-- Authentication Modal -->
+<div class="auth-modal" id="authModal">
+    <div class="auth-container">
+        <h2>Login Required</h2>
+        <div class="auth-error" id="authError">Invalid username or password</div>
+        <form onsubmit="handleLogin(event)">
+            <div class="auth-form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required autofocus/>
+            </div>
+            <div class="auth-form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required/>
+            </div>
+            <button type="submit" class="auth-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<div class="main-content" id="mainContent">
+<div class="container">
+<header>
+<h1>Interactive IT Support Knowledge Quiz</h1>
+<p>Test your skills in troubleshooting, security, and help desk best practices.</p>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/bnrahma/" target="_blank" rel="noopener noreferrer"><span class="social-icon">🔗</span> LinkedIn</a>
+<a href="https://github.com/Byqb" target="_blank" rel="noopener noreferrer"><span class="social-icon">💻</span> GitHub</a>
+</div>
+</header>
+<div class="instructions">
+<h3>How to Use This Quiz</h3>
+<p>
+                1. Read each question carefully.
+                <br/>2. Select the best answer(s) for each question.
+                <br/>3. After answering all questions, click the "Submit Quiz" button at the bottom.
+                <br/>4. Your score will be displayed, and the correct answers with explanations will be revealed.
+            </p>
+</div>
+<div class="study-tips">
+<h3>Study Tips</h3>
+<p>Pay close attention to keywords in the scenarios (e.g., "networked printer," "macOS," "Active Directory"). The explanations provided in the answer key are designed to reinforce key concepts. Use them to understand not just *what* the answer is, but *why*.</p>
+</div>
+<form id="quiz-form">
+<!-- SECTION: Troubleshooting and OS Management -->
+<section class="quiz-section">
+<h2>Section 1: Troubleshooting and OS Management</h2>
+<!-- Question 1 -->
+<div class="question-block" data-answer="A" data-question="1" data-type="mc">
+<h3>Question 1: Wi-Fi Troubleshooting<span class="question-counter">Question 1 of 71</span></h3>
+<div class="question-text">A help desk technician is troubleshooting Wi-Fi connectivity issues on a user's mobile phone. Restarting the phone and router did not resolve the issue. Which next step should a help desk technician take to attempt to resolve the issue?</div>
+<div class="options">
+<ul>
+<li><label><input name="q1" type="radio" value="A"/> A. Reset the network settings to default.</label></li>
+<li><label><input name="q1" type="radio" value="B"/> B. Replace the SIM card.</label></li>
+<li><label><input name="q1" type="radio" value="C"/> C. Ensure that airplane mode is off.</label></li>
+<li><label><input name="q1" type="radio" value="D"/> D. Update the OS to the latest version.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. Reset the network settings to default.</strong><br/>After basic restarts fail, resetting network settings is a logical next step. It clears saved Wi-Fi networks, passwords, and other configurations that might be corrupt, without affecting personal data. Replacing a SIM card is for cellular issues, checking airplane mode is a preliminary step, and updating the OS is more drastic.</div>
+</div>
+<!-- Question 2 -->
+<div class="question-block" data-question="2" data-type="match">
+<h3>Question 2: IP Address Identification<span class="question-counter">Question 2 of 71</span></h3>
+<div class="scenario">Match the description to the correct IP address.</div>
+<table>
+<thead><tr><th>Description</th><th>IP Address</th></tr></thead>
+<tbody>
+<tr data-answer="172.10.47.255">
+<td>The message is sent to all computers on the network.</td>
+<td><select name="q2_1"><option value="">Select an IP...</option><option>127.0.0.1</option><option>172.10.47.255</option><option>172.10.47.147</option></select></td>
+</tr>
+<tr data-answer="127.0.0.1">
+<td>A reply is sent from the loopback address.</td>
+<td><select name="q2_2"><option value="">Select an IP...</option><option>127.0.0.1</option><option>172.10.47.255</option><option>172.10.47.147</option></select></td>
+</tr>
+<tr data-answer="172.10.47.147">
+<td>What is the IP address of the physical network adapter?</td>
+<td><select name="q2_3"><option value="">Select an IP...</option><option>127.0.0.1</option><option>172.10.47.255</option><option>172.10.47.147</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Matches:</strong><br/><ul><li><strong>Broadcast Address:</strong> 172.10.47.255 (sends to all hosts on the network).</li><li><strong>Loopback Address:</strong> 127.0.0.1 (refers to the local machine).</li><li><strong>Physical Adapter IP:</strong> 172.10.47.147 (a standard host IP on the network).</li></ul></div>
+</div>
+<!-- Question 3 -->
+<div class="question-block" data-answer="Processes" data-question="3" data-type="mc">
+<h3>Question 3: Closing Unresponsive Applications<span class="question-counter">Question 3 of 71</span></h3>
+<div class="scenario">You need to help a Windows user close some Microsoft Edge pages that are no longer responding. You guide them to Task Manager. Which tab will allow the user to close a task?</div>
+<img alt="Task Manager" src="assets/images/image1.png"/>
+<div class="options">
+<ul>
+<li><label><input name="q3" type="radio" value="Processes"/> A. Processes</label></li>
+<li><label><input name="q3" type="radio" value="Performance"/> B. Performance</label></li>
+<li><label><input name="q3" type="radio" value="Details"/> C. Details</label></li>
+<li><label><input name="q3" type="radio" value="Services"/> D. Services</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. Processes.</strong><br/>The <strong>Processes</strong> tab in Windows Task Manager lists all running applications and background processes. From here, a user can select an unresponsive application and click "End task" to force it to close.</div>
+</div>
+<!-- Question 4 -->
+<div class="question-block" data-question="4" data-type="match">
+<h3>Question 4: WLAN Connection Issues After Update<span class="question-counter">Question 4 of 71</span></h3>
+<div class="scenario">A user reports that they have not been able to connect their phone to the WLAN since updating it. For each condition, select True if the condition could relate to the issue or False if it has no relationship.</div>
+<table>
+<thead><tr><th>Condition</th><th>Answer</th></tr></thead>
+<tbody>
+<tr data-answer="True">
+<td>The phone is in Airplane Mode.</td>
+<td><select name="q4_1"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+<tr data-answer="False">
+<td>The phone is on a different carrier network.</td>
+<td><select name="q4_2"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+<tr data-answer="False">
+<td>The phone's personal hotspot option is turned off.</td>
+<td><select name="q4_3"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Matches:</strong><br/><ul><li><strong>Airplane Mode:</strong> True. Airplane mode disables all wireless radios, including Wi-Fi.</li><li><strong>Different Carrier:</strong> False. The cellular carrier is separate from WLAN (Wi-Fi) connectivity.</li><li><strong>Hotspot Off:</strong> False. The hotspot feature allows a phone to share its cellular data; it does not affect its ability to connect to a Wi-Fi network.</li></ul></div>
+</div>
+<!-- Question 5 -->
+<div class="question-block" data-answer="B" data-question="5" data-type="mc">
+<h3>Question 5: Password Security<span class="question-counter">Question 5 of 71</span></h3>
+<div class="question-text">Which password is most secure?</div>
+<div class="options">
+<ul>
+<li><label><input name="q5" type="radio" value="A"/> A. oNOm@topoeia</label></li>
+<li><label><input name="q5" type="radio" value="B"/> B. ILOveP@nc@Ke$</label></li>
+<li><label><input name="q5" type="radio" value="C"/> C. zxcvbnm,.?</label></li>
+<li><label><input name="q5" type="radio" value="D"/> D. Jonathan1!</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. ILOveP@nc@Ke$.</strong><br/>This password is the strongest because it is long (13 characters), uses a mix of uppercase, lowercase, and special characters, and employs substitutions (@ for 'a', $ for 's') that make it resistant to dictionary attacks. Length and complexity are key.</div>
+</div>
+<!-- Question 6 -->
+<div class="question-block" data-answer="B" data-question="6" data-type="mc">
+<h3>Question 6: Application Installation without Admin Rights<span class="question-counter">Question 6 of 71</span></h3>
+<div class="scenario">A user is trying to install a productivity application by downloading it from the vendor's website. A user account control message prompts them for administrative login. They do not have administrator credentials. What should you do?</div>
+<div class="options">
+<ul>
+<li><label><input name="q6" type="radio" value="A"/> A. Tell the user to download the application from a 3rd-party Appstore.</label></li>
+<li><label><input name="q6" type="radio" value="B"/> B. Tell the user to submit an IT ticket to get approval for the application.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. Tell the user to submit an IT ticket to get approval for the application.</strong><br/>In a corporate environment, software installation is typically managed by IT to ensure security and compliance. The correct procedure is to follow the company's process for software requests, which is usually through a ticketing system.</div>
+</div>
+<!-- Question 7 -->
+<div class="question-block" data-answer="B" data-question="7" data-type="mc">
+<h3>Question 7: Managing Microsoft Office Files on Google Drive<span class="question-counter">Question 7 of 71</span></h3>
+<div class="scenario">An employee is struggling with using Google Drive for storing Microsoft Office files that they create and edit on their PC using custom templates. Company policy encourages all employees to store their files on Google Drive. What should you recommend?</div>
+<div class="options">
+<ul>
+<li><label><input name="q7" type="radio" value="A"/> A. Recommend that the user stop using Microsoft Office and only use Google Workspace apps.</label></li>
+<li><label><input name="q7" type="radio" value="B"/> B. Instruct the employee to download and install Google Drive for Desktop.</label></li>
+<li><label><input name="q7" type="radio" value="C"/> C. Have the employee upload all edited and new files to Google Drive at the end of each workday and then download the required files for editing as needed.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. Instruct the employee to download and install Google Drive for Desktop.</strong><br/>Google Drive for Desktop integrates with the local file system (e.g., Windows Explorer), allowing users to work with their Office files directly from their PC while the files are automatically synced to the cloud. This is the most seamless solution.</div>
+</div>
+<!-- Question 8 -->
+<div class="question-block" data-answer="A" data-question="8" data-type="mc">
+<h3>Question 8: Printer Troubleshooting Post-Outage<span class="question-counter">Question 8 of 71</span></h3>
+<div class="scenario">A local workgroup printer was unplugged. After plugging it back in and restarting it, print jobs sent from a computer still do not print. What should you do next?</div>
+<div class="options">
+<ul>
+<li><label><input name="q8" type="radio" value="A"/> A. Clear the print queue and try to print again.</label></li>
+<li><label><input name="q8" type="radio" value="B"/> B. Reinstall the printer drivers on the employee's computer.</label></li>
+<li><label><input name="q8" type="radio" value="C"/> C. Verify that the printer is set as the default printer on the employee's computer.</label></li>
+<li><label><input name="q8" type="radio" value="D"/> D. Check that the employee's PC is connected to the network.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. Clear the print queue and try to print again.</strong><br/>When the user tried to print while the printer was offline, the jobs became stuck in the local print queue. Even after the printer is back online, the stalled job can block new ones. Clearing the queue is the correct next step.</div>
+</div>
+<!-- Question 9 -->
+<div class="question-block" data-answer="A" data-question="9" data-type="mc">
+<h3>Question 9: IPv6 Address Types<span class="question-counter">Question 9 of 71</span></h3>
+<div class="question-text">Which IPv6 address would be assigned by DHCPv6 to a host that needs to reach IPv6-only resources on the internet?</div>
+<div class="options">
+<ul>
+<li><label><input name="q9" type="radio" value="A"/> A. 2001:1db8:1234::1</label></li>
+<li><label><input name="q9" type="radio" value="B"/> B. fe80:b1e8:6ee4:1f37:af98</label></li>
+<li><label><input name="q9" type="radio" value="C"/> C. fd4c:3456:0012a::1</label></li>
+<li><label><input name="q9" type="radio" value="D"/> D. ff05::ff</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. 2001:1db8:1234::1.</strong><br/>To reach the public internet, a host needs a globally routable address. Addresses in the <strong>2000::/3</strong> range are Global Unicast Addresses (GUA). `fe80::` is a non-routable Link-Local address, `fd...` is a non-routable Unique Local Address, and `ff...` is a Multicast address.</div>
+</div>
+<!-- Question 10 -->
+<div class="question-block" data-answer="A" data-question="10" data-type="mc">
+<h3>Question 10: Device Manager Malfunction Indicator<span class="question-counter">Question 10 of 71</span></h3>
+<div class="question-text">A help desk technician is using Windows Device Manager to troubleshoot a hardware issue reported by a user. Which indicator identifies a device that might be malfunctioning?</div>
+<div class="options">
+<ul>
+<li><label><input name="q10" type="radio" value="A"/> A. A yellow exclamation mark icon.</label></li>
+<li><label><input name="q10" type="radio" value="B"/> B. A red 'X' icon.</label></li>
+<li><label><input name="q10" type="radio" value="C"/> C. A blue question mark icon.</label></li>
+<li><label><input name="q10" type="radio" value="D"/> D. The device is listed under "Other devices".</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. A yellow exclamation mark icon.</strong><br/>In Windows Device Manager, a yellow exclamation mark next to a device indicates a problem, such as a driver issue, resource conflict, or hardware malfunction. A red 'X' means the device is disabled.</div>
+</div>
+<!-- Question 11 -->
+<div class="question-block" data-answer="B" data-question="11" data-type="mc">
+<h3>Question 11: Remote Support Tool for Unattended Access<span class="question-counter">Question 11 of 71</span></h3>
+<div class="scenario">You need to provide remote technical support to a colleague who is encountering computer issues while working from home on their Windows 11 computer. The colleague needs you to troubleshoot and resolve the problem while they are at lunch. Which tool should you use?</div>
+<div class="options">
+<ul>
+<li><label><input name="q11" type="radio" value="A"/> A. Windows Quick Assist</label></li>
+<li><label><input name="q11" type="radio" value="B"/> B. Remote Desktop Protocol (RDP)</label></li>
+<li><label><input name="q11" type="radio" value="C"/> C. Windows Remote Management (WinRM)</label></li>
+<li><label><input name="q11" type="radio" value="D"/> D. A third-party screen sharing tool like WebEx.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. Remote Desktop Protocol (RDP).</strong><br/>RDP allows for full, unattended control of a remote computer, which is necessary since the colleague will be away. Quick Assist and most screen sharing tools require the user to be present to initiate and approve the session.</div>
+</div>
+<!-- Question 12 -->
+<div class="question-block" data-answer='["A","B","E"]' data-question="12" data-type="ms">
+<h3>Question 12: WebEx Audio Troubleshooting (User Cannot Be Heard)<span class="question-counter">Question 12 of 71</span></h3>
+<div class="question-text">You connect with a client over WebEx. You can hear the client speaking but they cannot hear you. Which three things should you check to get your audio working properly? (Choose 3)</div>
+<div class="options">
+<ul>
+<li><label><input name="q12" type="checkbox" value="A"/> A. The input volume is turned up.</label></li>
+<li><label><input name="q12" type="checkbox" value="B"/> B. The sound isn't being muted.</label></li>
+<li><label><input name="q12" type="checkbox" value="C"/> C. The operating system volume is turned up.</label></li>
+<li><label><input name="q12" type="checkbox" value="D"/> D. The microphone icon is not selected.</label></li>
+<li><label><input name="q12" type="checkbox" value="E"/> E. The correct sound device is selected in WebEx.</label></li>
+<li><label><input name="q12" type="checkbox" value="F"/> F. The line in property is not disabled.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answers: A, B, and E.</strong><br/>If others cannot hear you, the issue is with your audio input (microphone). You should check: 1) The correct microphone is selected in the application's settings (E). 2) The microphone is not muted in the app or on the hardware (B). 3) The microphone's input volume is at an audible level (A). OS volume (C) typically controls output (speakers).</div>
+</div>
+<!-- Question 13 -->
+<div class="question-block" data-answer="D" data-question="13" data-type="mc">
+<h3>Question 13: Identifying and Responding to Phishing<span class="question-counter">Question 13 of 71</span></h3>
+<div class="scenario">Jason states he received the following email from the Human Resources Department. What should you tell Jason to do?
+<pre>To: jason@sunsetweb.com  
+From: hrdept@mybenefits.biz  
+Subject: Policy Change  
+Dear Employee:  
+Your benefits policy is changing at the end of the month. Please click this link to register for a consultation. Failure to register by the end of the month will result in loss of benefits.  
+Sincerely,  
+Human Resources Department
+</pre>
+</div>
+<div class="options">
+<ul>
+<li><label><input name="q13" type="radio" value="A"/> A. Click the link to see if it's real.</label></li>
+<li><label><input name="q13" type="radio" value="B"/> B. Reply and ask for verification.</label></li>
+<li><label><input name="q13" type="radio" value="C"/> C. Delete the email immediately.</label></li>
+<li><label><input name="q13" type="radio" value="D"/> D. Report the email to the IT department that handles threats at their company, then delete the email.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: D. Report the email to the IT department that handles threats at their company, then delete the email.</strong><br/>This email shows classic phishing signs: a suspicious sender domain (`mybenefits.biz`), a sense of urgency, and a threat ("loss of benefits"). The correct action is to report it to IT/Security so they can block the sender and warn others, then delete it without clicking any links.</div>
+</div>
+<!-- Question 14 -->
+<div class="question-block" data-answer="C" data-question="14" data-type="mc">
+<h3>Question 14: DNS Query Command-Line Tool<span class="question-counter">Question 14 of 71</span></h3>
+<div class="question-text">You are investigating a DNS problem. Which command can you use to query DNS records from a command-line interface?</div>
+<div class="options">
+<ul>
+<li><label><input name="q14" type="radio" value="A"/> A. traceroute</label></li>
+<li><label><input name="q14" type="radio" value="B"/> B. ping</label></li>
+<li><label><input name="q14" type="radio" value="C"/> C. nslookup</label></li>
+<li><label><input name="q14" type="radio" value="D"/> D. netstat</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. nslookup.</strong><br/>The `nslookup` (Name Server Lookup) command is the standard tool for querying the Domain Name System (DNS) to obtain domain name to IP address mappings.</div>
+</div>
+<!-- Question 15 -->
+<div class="question-block" data-question="15" data-type="order">
+<h3>Question 15: Diagnosing PC Performance Issues<span class="question-counter">Question 15 of 71</span></h3>
+<div class="scenario">A customer complains that the performance of their PC is severely impacted when several applications are open at the same time. You suspect that a memory upgrade might fix the problem. Which two actions should you ask the user to complete in sequence?</div>
+<div class="options">
+<p><strong>Actions:</strong></p>
+<ol>
+<li>Open the applications that they frequently use at the same time.</li>
+<li>Open Task Manager and report the percent utilization of the processor and system memory.</li>
+</ol>
+<p>Drag and drop to reorder if necessary (functionality simulated by selection).</p>
+</div>
+<div class="explanation"><strong>Correct Order: 1, then 2.</strong><br/>To accurately diagnose a performance issue under load, you must first replicate the condition causing the problem (1. Open the applications). Only then can you use a diagnostic tool like Task Manager to observe the system's resource utilization under that load (2. Open Task Manager).</div>
+</div>
+<!-- Question 16 -->
+<div class="question-block" data-answer="D" data-question="16" data-type="mc">
+<h3>Question 16: Troubleshooting a Networked Printer<span class="question-counter">Question 16 of 71</span></h3>
+<div class="scenario">A customer reports they are unable to print to a networked printer. The job is pending in the taskbar. They have already tried printing a test page with no success. You suspect the printer is unavailable. What should you do next?</div>
+<div class="options">
+<ul>
+<li><label><input name="q16" type="radio" value="A"/> A. Tell the user to print to a different printer.</label></li>
+<li><label><input name="q16" type="radio" value="B"/> B. Ask the user which applications they are trying to print from.</label></li>
+<li><label><input name="q16" type="radio" value="C"/> C. Replace the printer with one that works.</label></li>
+<li><label><input name="q16" type="radio" value="D"/> D. Test the printer's network connectivity.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: D. Test the printer's network connectivity.</strong><br/>Since it's a networked printer and the job is stuck, the most likely cause is a connectivity issue between the computer and the printer. Testing network connectivity (e.g., by pinging the printer's IP address) is the most direct way to confirm this hypothesis.</div>
+</div>
+<!-- Question 17 -->
+<div class="question-block" data-answer="C" data-question="17" data-type="mc">
+<h3>Question 17: Identity Verification for Password Reset<span class="question-counter">Question 17 of 71</span></h3>
+<div class="scenario">An end user calls you via telephone stating they are Jane Doe and need an immediate password reset to process payroll. What should you do?</div>
+<div class="options">
+<ul>
+<li><label><input name="q17" type="radio" value="A"/> A. Reset the password because Jane Doe has to process payroll immediately.</label></li>
+<li><label><input name="q17" type="radio" value="B"/> B. Request Jane Doe's call back number so that you can reset the password and call Jane Doe back to verify the reset was successful.</label></li>
+<li><label><input name="q17" type="radio" value="C"/> C. Call Jane Doe's manager using their company number to verify Jane Doe's needs and identity.</label></li>
+<li><label><input name="q17" type="radio" value="D"/> D. Ask Jane Doe for their email address so that you can email them to verify identity.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. Call Jane Doe's manager using their company number to verify Jane Doe's needs and identity.</strong><br/>This is a potential social engineering attack. You must verify the user's identity through an out-of-band method. Calling their manager (using a number from a trusted company directory, not one provided by the caller) is a strong verification step before performing a sensitive action like a password reset.</div>
+</div>
+<!-- Question 18 -->
+<div class="question-block" data-answer="E" data-question="18" data-type="mc">
+<h3>Question 18: Identifying Sensitive PII<span class="question-counter">Question 18 of 71</span></h3>
+<div class="question-text">Company policy states that all sensitive PII will be removed from company servers after 3 months of inactivity. A user requests verification that their data was removed. You check the server and see some user data is still present. Which data should have been removed?</div>
+<div class="options">
+<ul>
+<li><label><input name="q18" type="radio" value="A"/> A. Full Name</label></li>
+<li><label><input name="q18" type="radio" value="B"/> B. Phone Number</label></li>
+<li><label><input name="q18" type="radio" value="C"/> C. Physical Address</label></li>
+<li><label><input name="q18" type="radio" value="D"/> D. Email Address</label></li>
+<li><label><input name="q18" type="radio" value="E"/> E. Driver's License Number</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: E. Driver's License Number.</strong><br/>While all options are PII, a Driver's License Number is considered highly sensitive PII because it's a government-issued identifier that can be used for identity theft. Policies for removing "sensitive" PII would prioritize this type of data over more general contact information.</div>
+</div>
+<!-- Question 19 -->
+<div class="question-block" data-answer="B" data-question="19" data-type="mc">
+<h3>Question 19: Identifying Computer Components for CPU Upgrade<span class="question-counter">Question 19 of 71</span></h3>
+<div class="scenario">A technician needs to upgrade the CPU of a user's desktop computer. The technician opens the computer and sees the internal components. Which letter identifies the component you need to remove to locate the CPU?</div>
+<img alt="PC Internals" src="assets/images/image2.png"/>
+<div class="options">
+<ul>
+<li><label><input name="q19" type="radio" value="A"/> A. A</label></li>
+<li><label><input name="q19" type="radio" value="B"/> B. B</label></li>
+<li><label><input name="q19" type="radio" value="C"/> C. C</label></li>
+<li><label><input name="q19" type="radio" value="D"/> D. D</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. B.</strong><br/>The component labeled 'B' is the CPU cooler (heatsink and fan assembly). The CPU is located on the motherboard directly underneath this cooler. To access or upgrade the CPU, the cooler must be removed first.</div>
+</div>
+<!-- Question 20 -->
+<div class="question-block" data-answer='["B","D","E"]' data-question="20" data-type="ms">
+<h3>Question 20: Examples of Personally Identifiable Information (PII)<span class="question-counter">Question 20 of 71</span></h3>
+<div class="question-text">Which three individual pieces of information are personally identifiable information (PII) and should be protected to safeguard an individual's privacy? (Choose 3)</div>
+<div class="options">
+<ul>
+<li><label><input name="q20" type="checkbox" value="A"/> A. Language preference</label></li>
+<li><label><input name="q20" type="checkbox" value="B"/> B. Social Security Number (SSN)</label></li>
+<li><label><input name="q20" type="checkbox" value="C"/> C. Email address</label></li>
+<li><label><input name="q20" type="checkbox" value="D"/> D. Place of birth</label></li>
+<li><label><input name="q20" type="checkbox" value="E"/> E. Credit card number</label></li>
+<li><label><input name="q20" type="checkbox" value="F"/> F. First name</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answers: B, D, and E.</strong><br/>PII is any information that can identify a specific individual. <strong>Social Security Number</strong> and <strong>Credit card number</strong> are highly sensitive unique identifiers. <strong>Place of birth</strong>, especially when combined with other data, is also considered PII. While an email address (C) is also PII, the provided answer key implies B, D, and E are the intended correct choices.</div>
+</div>
+<!-- Question 21 -->
+<div class="question-block" data-answer="B" data-question="21" data-type="mc">
+<h3>Question 21: Configuring Dual Monitors<span class="question-counter">Question 21 of 71</span></h3>
+<div class="scenario">A user has added a second monitor but sees the same image on both screens. They want to view different documents on each monitor. Which display mode should they configure?</div>
+<div class="options">
+<ul>
+<li><label><input name="q21" type="radio" value="A"/> A. Duplicate these displays</label></li>
+<li><label><input name="q21" type="radio" value="B"/> B. Extend these displays</label></li>
+<li><label><input name="q21" type="radio" value="C"/> C. Show only on 1</label></li>
+<li><label><input name="q21" type="radio" value="D"/> D. show only on 2</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. Extend these displays.</strong><br/>"Extend these displays" mode treats the two monitors as one continuous large desktop, allowing the user to move windows and view different content across both screens. "Duplicate" shows the same image on both.</div>
+</div>
+<!-- Question 22 -->
+<div class="question-block" data-question="22" data-type="match">
+<h3>Question 22: Understanding AI Concepts<span class="question-counter">Question 22 of 71</span></h3>
+<div class="scenario">You consider using AI to find solutions to common Help Desk issues. For each statement about AI, select True or False.</div>
+<table>
+<thead><tr><th>Statement</th><th>Answer</th></tr></thead>
+<tbody>
+<tr data-answer="True">
+<td>Predictive AI uses historical data to forecast future outcomes.</td>
+<td><select name="q22_1"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+<tr data-answer="True">
+<td>Generative AI creates new content based on trained, unstructured data.</td>
+<td><select name="q22_2"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+<tr data-answer="False">
+<td>Generative AI is more reliable than predictive AI.</td>
+<td><select name="q22_3"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Matches:</strong><br/><ul><li><strong>Predictive AI:</strong> True. Its purpose is to analyze past data to predict future events.</li><li><strong>Generative AI:</strong> True. It learns from existing data to generate new, original content.</li><li><strong>Reliability:</strong> False. Reliability depends on the specific model, data, and application. Neither type is inherently more reliable than the other.</li></ul></div>
+</div>
+<!-- Question 23 -->
+<div class="question-block" data-question="23" data-type="match">
+<h3>Question 23: Identifying Interface Types<span class="question-counter">Question 23 of 71</span></h3>
+<div class="scenario">Move the interface types from the list to their representations in the image.</div>
+<img alt="Interface Ports" src="assets/images/image9.png"/>
+<div class="options">
+<p>Match the labels (HDMI, DisplayPort, USB-C, LAN) to the ports in the image.</p>
+</div>
+<div class="explanation"><strong>Correct Matches (from left to right in image):</strong><br/>The image shows ports for <strong>DisplayPort</strong>, <strong>HDMI</strong>, <strong>USB-C</strong>, and <strong>LAN (RJ-45)</strong>. You would match the corresponding label to each port.</div>
+</div>
+<!-- Question 24 -->
+<div class="question-block" data-answer="B" data-question="24" data-type="mc">
+<h3>Question 24: Closing Unresponsive Processes on macOS<span class="question-counter">Question 24 of 71</span></h3>
+<div class="question-text">A macOS user needs help closing some Safari processes that are no longer responding. Which option will close the processes in Activity Monitor?</div>
+<div class="options">
+<ul>
+<li><label><input name="q24" type="radio" value="A"/> A. End Task</label></li>
+<li><label><input name="q24" type="radio" value="B"/> B. Force Quit</label></li>
+<li><label><input name="q24" type="radio" value="C"/> C. Force Stop</label></li>
+<li><label><input name="q24" type="radio" value="D"/> D. End Process</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. Force Quit.</strong><br/>On macOS, the utility for managing processes is <strong>Activity Monitor</strong>. The standard method to terminate an unresponsive application is to select it and use the <strong>Force Quit</strong> option, which is the macOS equivalent of "End Task" in Windows.</div>
+</div>
+<!-- Question 25 -->
+<div class="question-block" data-answer="B" data-question="25" data-type="mc">
+<h3>Question 25: Purpose of a Queue Management System<span class="question-counter">Question 25 of 71</span></h3>
+<div class="question-text">What is the purpose of a queue management system for a help desk?</div>
+<div class="options">
+<ul>
+<li><label><input name="q25" type="radio" value="A"/> A. It allows clients to choose their place in the queue.</label></li>
+<li><label><input name="q25" type="radio" value="B"/> B. It ensures that customer issues are addressed fairly and timely.</label></li>
+<li><label><input name="q25" type="radio" value="C"/> C. It ensures that customer issues are addressed based only on issue complexity.</label></li>
+<li><label><input name="q25" type="radio" value="D"/> D. It allows technicians to choose which ticket they want to complete.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. It ensures that customer issues are addressed fairly and timely.</strong><br/>A queue management system organizes incoming requests (tickets) based on predefined rules (e.g., priority, first-in-first-out) to ensure an orderly, fair, and efficient workflow for the help desk team.</div>
+</div>
+<!-- Question 26 -->
+<div class="question-block" data-question="26" data-type="match">
+<h3>Question 26: Identifying Cable Connectors<span class="question-counter">Question 26 of 71</span></h3>
+<div class="scenario">Identify the cable connectors shown in the image.</div>
+<img alt="Cable Connectors" src="assets/images/image3.jpeg"/>
+<div class="options">
+<p>Match the labels (DisplayPort, USB-A, RJ-45, DVI, HDMI, Power Cable) to the connectors in the image.</p>
+</div>
+<div class="explanation"><strong>Correct Matches:</strong><br/>The image displays various common computer cable connectors. You would match the name of each connector type to its picture. For example, identifying the rectangular USB-A port, the trapezoidal DVI port, the ethernet RJ-45 port, etc.</div>
+</div>
+<!-- Question 27 -->
+<div class="question-block" data-question="27" data-type="match">
+<h3>Question 27: Matching Windows Tools to Descriptions<span class="question-counter">Question 27 of 71</span></h3>
+<div class="scenario">Move each Windows tool from the list on the left to its description on the right.</div>
+<img alt="Windows Tools" src="assets/images/image4.png"/>
+<div class="explanation"><strong>Correct Matches:</strong><br/>This is a visual matching question. You would drag and drop the icon/name of a Windows tool (like Task Manager, Device Manager, etc.) to the text box describing its function (e.g., "Manages running processes," "Configures hardware drivers").</div>
+</div>
+<!-- Question 28 -->
+<div class="question-block" data-answer='["A","C","E"]' data-question="28" data-type="ms">
+<h3>Question 28: Opening Task Manager in Windows<span class="question-counter">Question 28 of 71</span></h3>
+<div class="question-text">A user reports that a Windows application is frozen. Which three methods can you use to direct the user to open a tool that can be used to close the application? (Choose 3)</div>
+<div class="options">
+<ul>
+<li><label><input name="q28" type="checkbox" value="A"/> A. Right-click on the taskbar and choose Task Manager.</label></li>
+<li><label><input name="q28" type="checkbox" value="B"/> B. Right-click on the desktop and choose Task Manager.</label></li>
+<li><label><input name="q28" type="checkbox" value="C"/> C. Press Ctrl-Shift-Esc on the keyboard.</label></li>
+<li><label><input name="q28" type="checkbox" value="D"/> D. Press Ctrl-Alt-Esc on the keyboard.</label></li>
+<li><label><input name="q28" type="checkbox" value="E"/> E. Right-click the Start icon and choose Task Manager.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answers: A, C, and E.</strong><br/>The three common and direct ways to open Task Manager are: 1) Right-clicking the taskbar, 2) using the dedicated keyboard shortcut Ctrl+Shift+Esc, and 3) right-clicking the Start button. Ctrl+Alt+Delete also provides an option to open it, but it's an extra step.</div>
+</div>
+<!-- Question 29 -->
+<div class="question-block" data-answer="C" data-question="29" data-type="mc">
+<h3>Question 29: Initial Response to Application Crash<span class="question-counter">Question 29 of 71</span></h3>
+<div class="scenario">A user calls the help desk and states that their computer crashes every time they use a specific application. What should be your initial response?</div>
+<div class="options">
+<ul>
+<li><label><input name="q29" type="radio" value="A"/> A. Provide the user with alternative applications to use until the issue resolves itself.</label></li>
+<li><label><input name="q29" type="radio" value="B"/> B. Ask the user to stop using the application until a software update is released by the company.</label></li>
+<li><label><input name="q29" type="radio" value="C"/> C. Ask the user to provide detailed information about actions leading up to the crash and error messages displayed.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. Ask the user to provide detailed information about actions leading up to the crash and error messages displayed.</strong><br/>The first step in troubleshooting is always to gather information. Understanding the specific actions, error messages, and circumstances surrounding the crash is essential to identifying the root cause.</div>
+</div>
+<!-- Question 30 -->
+<div class="question-block" data-answer='["A","B"]' data-question="30" data-type="ms">
+<h3>Question 30: Operating Systems Supporting Remote Desktop<span class="question-counter">Question 30 of 71</span></h3>
+<div class="question-text">Which two operating systems support Remote Desktop client connections? (Choose 2)</div>
+<div class="options">
+<ul>
+<li><label><input name="q30" type="checkbox" value="A"/> A. Windows 11 Pro</label></li>
+<li><label><input name="q30" type="checkbox" value="B"/> B. Windows 10 Enterprise</label></li>
+<li><label><input name="q30" type="checkbox" value="C"/> C. Windows 11 Home</label></li>
+<li><label><input name="q30" type="checkbox" value="D"/> D. Windows 10 Home</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answers: A and B.</strong><br/>The ability to host a Remote Desktop session is a feature of the professional and enterprise editions of Windows. Windows Home editions can act as a client to connect to other computers, but they cannot host an incoming RDP connection.</div>
+</div>
+<!-- Question 31 -->
+<div class="question-block" data-answer="A" data-question="31" data-type="mc">
+<h3>Question 31: Resolving a Printer Driver Failure<span class="question-counter">Question 31 of 71</span></h3>
+<div class="question-text">Which action must a service desk technician take to resolve a printer driver failure on a desktop PC?</div>
+<div class="options">
+<ul>
+<li><label><input name="q31" type="radio" value="A"/> A. Update the device driver software.</label></li>
+<li><label><input name="q31" type="radio" value="B"/> B. Disconnect and reconnect from the power source.</label></li>
+<li><label><input name="q31" type="radio" value="C"/> C. Move the driver file to the C:\Windows\System32 folder.</label></li>
+<li><label><input name="q31" type="radio" value="D"/> D. Boot the computer in safe mode.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. Update the device driver software.</strong><br/>A "driver failure" explicitly points to a problem with the driver software. The most direct solution is to update or reinstall the driver to fix corruption or incompatibility issues.</div>
+</div>
+<!-- Question 32 -->
+<div class="question-block" data-question="32" data-type="match">
+<h3>Question 32: Matching Windows Tools to Scenarios<span class="question-counter">Question 32 of 71</span></h3>
+<div class="scenario">Match each Windows tool to its appropriate usage scenario.</div>
+<table>
+<thead><tr><th>Usage Scenario</th><th>Windows Tool</th></tr></thead>
+<tbody>
+<tr data-answer="Display Settings">
+<td>The technician is helping a user set up multiple monitors so they can work more efficiently.</td>
+<td><select name="q32_1"><option value="">Select a tool...</option><option>Device Manager</option><option>Disk Management</option><option>Display Settings</option><option>Task Manager</option></select></td>
+</tr>
+<tr data-answer="Disk Management">
+<td>The technician advises a user on how to prepare a new external hard drive for file backup by formatting it and assigning a drive letter.</td>
+<td><select name="q32_2"><option value="">Select a tool...</option><option>Device Manager</option><option>Disk Management</option><option>Display Settings</option><option>Task Manager</option></select></td>
+</tr>
+<tr data-answer="Task Manager">
+<td>To address complaints of a sluggish computer, the technician guides the user through identifying programs that are consuming too much system resources.</td>
+<td><select name="q32_3"><option value="">Select a tool...</option><option>Device Manager</option><option>Disk Management</option><option>Display Settings</option><option>Task Manager</option></select></td>
+</tr>
+<tr data-answer="Device Manager">
+<td>A user is having trouble with their newly connected webcam not functioning correctly, and the technician needs to verify the driver installation.</td>
+<td><select name="q32_4"><option value="">Select a tool...</option><option>Device Manager</option><option>Disk Management</option><option>Display Settings</option><option>Task Manager</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation">
+<strong>Correct Matches:</strong><br/>
+<ul>
+<li><strong>Multiple monitors:</strong> Display Settings</li>
+<li><strong>Formatting a new drive:</strong> Disk Management</li>
+<li><strong>High resource consumption:</strong> Task Manager</li>
+<li><strong>Verifying driver installation:</strong> Device Manager</li>
+</ul>
+</div>
+</div>
+<!-- Question 33 -->
+<div class="question-block" data-question="33" data-type="order">
+<h3>Question 33: Checking USB Ports for Errors<span class="question-counter">Question 33 of 71</span></h3>
+<div class="scenario">A user reports that they are having issues connecting devices to any USB port on their Windows laptop. You need to tell the user how to check the USB ports for errors. What are the three actions in the correct sequence?</div>
+<div class="options">
+<p><strong>Correct Actions in Order:</strong></p>
+<ol>
+<li>Type Device Manager in the search field next to the Windows icon and press Enter on the keyboard.</li>
+<li>Click the arrow next to Universal Serial Bus Controllers.</li>
+<li>Check the USB devices for warning indicators.</li>
+</ol>
+</div>
+<div class="explanation"><strong>Correct Order: 1, 2, 3.</strong><br/>To check for hardware errors, the correct tool is Device Manager. The sequence is: 1) Open Device Manager. 2) Navigate to the relevant hardware category (Universal Serial Bus Controllers). 3) Inspect the devices in that category for error icons (like a yellow exclamation mark).</div>
+</div>
+<!-- Question 34 -->
+<div class="question-block" data-question="34" data-type="match">
+<h3>Question 34: Problem-Solving Methodology for IP Issues<span class="question-counter">Question 34 of 71</span></h3>
+<div class="scenario">A user is unable to connect to the network. You suspect an IP configuration issue. Match each task to its problem-solving step.</div>
+<table>
+<thead><tr><th>Problem-Solving Step</th><th>Task</th></tr></thead>
+<tbody>
+<tr data-answer="Run ipconfig or ifconfig.">
+<td>Gather detailed information.</td>
+<td><select name="q34_1"><option value="">Select a task...</option><option>Log the new network settings into the ticketing system.</option><option>Modify the IP settings on the user's computer.</option><option>Ping a remote device from the user's computer.</option><option>Run ipconfig or ifconfig.</option></select></td>
+</tr>
+<tr data-answer="Modify the IP settings on the user's computer.">
+<td>Implement the plan.</td>
+<td><select name="q34_2"><option value="">Select a task...</option><option>Log the new network settings into the ticketing system.</option><option>Modify the IP settings on the user's computer.</option><option>Ping a remote device from the user's computer.</option><option>Run ipconfig or ifconfig.</option></select></td>
+</tr>
+<tr data-answer="Ping a remote device from the user's computer.">
+<td>Observe the results of the implementation.</td>
+<td><select name="q34_3"><option value="">Select a task...</option><option>Log the new network settings into the ticketing system.</option><option>Modify the IP settings on the user's computer.</option><option>Ping a remote device from the user's computer.</option><option>Run ipconfig or ifconfig.</option></select></td>
+</tr>
+<tr data-answer="Log the new network settings into the ticketing system.">
+<td>Document the changes made to solve the problem.</td>
+<td><select name="q34_4"><option value="">Select a task...</option><option>Log the new network settings into the ticketing system.</option><option>Modify the IP settings on the user';s computer.</option><option>Ping a remote device from the user's computer.</option><option>Run ipconfig or ifconfig.</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Matches:</strong><br/><ul><li><strong>Gather information:</strong> Run `ipconfig` to see the current configuration.</li><li><strong>Implement plan:</strong> `Modify the IP settings` based on your findings.</li><li><strong>Observe results:</strong> `Ping a remote device` to test if the change worked.</li><li><strong>Document changes:</strong> `Log the new settings` in the ticket.</li></ul></div>
+</div>
+<!-- Question 35 -->
+<div class="question-block" data-answer='["C","D"]' data-question="35" data-type="ms">
+<h3>Question 35: Steps in the Problem-Solving Process<span class="question-counter">Question 35 of 71</span></h3>
+<div class="question-text">Which three steps are part of the problem-solving process? (Choose 3)</div>
+<div class="options">
+<ul>
+<li><label><input name="q35" type="checkbox" value="A"/> A. Avoid isolating possible causes.</label></li>
+<li><label><input name="q35" type="checkbox" value="B"/> B. Expand the number of potential causes to create an efficient action plan.</label></li>
+<li><label><input name="q35" type="checkbox" value="C"/> C. Define the problem.</label></li>
+<li><label><input name="q35" type="checkbox" value="D"/> D. Gather the facts to isolate possible causes.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answers: C and D.</strong><br/>Standard IT problem-solving models always include defining the problem clearly and gathering facts to understand the situation and narrow down (isolate) potential causes. Avoiding isolation (A) and expanding causes (B) are counterproductive. The question asks for three, but only two valid options are provided.</div>
+</div>
+<!-- Question 36 -->
+<div class="question-block" data-answer="A" data-question="36" data-type="mc">
+<h3>Question 36: File Access Permission Issue<span class="question-counter">Question 36 of 71</span></h3>
+<div class="scenario">John Douglas cannot view a specific Test.docx file on a mapped network drive, but can access other files. The owner says they gave John access. Which setting was misconfigured?</div>
+<img alt="File Permissions" src="assets/images/image5.jpeg"/>
+<div class="options">
+<ul>
+<li><label><input name="q36" type="radio" value="A"/> A. The NTFS 'Deny' permission for the user.</label></li>
+<li><label><input name="q36" type="radio" value="B"/> B. The Share permission for the folder.</label></li>
+<li><label><input name="q36" type="radio" value="C"/> C. The user's group membership.</label></li>
+<li><label><input name="q36" type="radio" value="D"/> D. The file's 'Read-only' attribute.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. The NTFS 'Deny' permission for the user.</strong><br/>The image shows file permissions. Since the user can access other files in the same share, the issue is specific to this file. A 'Deny' permission on the file's NTFS access control list (ACL) for that specific user or a group they are in would override any 'Allow' permissions and block access.</div>
+</div>
+<!-- Question 37 -->
+<div class="question-block" data-answer="B" data-question="37" data-type="mc">
+<h3>Question 37: Impersonation Attack Type<span class="question-counter">Question 37 of 71</span></h3>
+<div class="scenario">You receive a call from someone claiming to work in your company's networking department. This person attempts to persuade you to use the Wi-Fi details they provide. You suspect an attempted impersonation attack. Which type of attack is this?</div>
+<div class="options">
+<ul>
+<li><label><input name="q37" type="radio" value="A"/> A. Smishing attack</label></li>
+<li><label><input name="q37" type="radio" value="B"/> B. A Man-in-the-Middle attack.</label></li>
+<li><label><input name="q37" type="radio" value="C"/> C. Cousin Domain attack</label></li>
+<li><label><input name="q37" type="radio" value="D"/> D. An Account Takeover</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. A Man-in-the-Middle attack.</strong><br/>The attacker is trying to get you to connect to a rogue Wi-Fi network they control. This would allow them to position themselves "in the middle" of your connection to the internet, intercepting all your traffic. This is a classic setup for a Man-in-the-Middle (MitM) attack.</div>
+</div>
+<!-- Question 38 -->
+<div class="question-block" data-answer="B" data-question="38" data-type="mc">
+<h3>Question 38: Configuring Virtual Machine Resources<span class="question-counter">Question 38 of 71</span></h3>
+<div class="scenario">A new employee complains that her virtual machine is very slow. You suspect that her machine needs more resources allocated to it. How can the virtual machine be configured with more resources?</div>
+<div class="options">
+<ul>
+<li><label><input name="q38" type="radio" value="A"/> A. Resources can be added from within the virtual machine.</label></li>
+<li><label><input name="q38" type="radio" value="B"/> B. Resources can be added from the hypervisor software.</label></li>
+<li><label><input name="q38" type="radio" value="C"/> C. Resources are not configurable after a virtual machine is provisioned.</label></li>
+<li><label><input name="q38" type="radio" value="D"/> D. Resources can be added from either the hypervisor software or from within a virtual machine.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. Resources can be added from the hypervisor software.</strong><br/>The hypervisor (e.g., VMware vSphere, Microsoft Hyper-V, VirtualBox) is the software that creates and manages virtual machines. It controls the allocation of physical hardware resources like CPU, RAM, and storage to each VM. These settings are configured in the hypervisor, not from within the guest OS.</div>
+</div>
+<!-- Question 39 -->
+<div class="question-block" data-answer="B" data-question="39" data-type="mc">
+<h3>Question 39: Configuring Microsoft Teams to Auto-Start<span class="question-counter">Question 39 of 71</span></h3>
+<div class="question-text">A user needs assistance configuring Microsoft Teams so that it will start automatically. Which category in Teams settings should the user select to set the application to auto-start?</div>
+<div class="options">
+<ul>
+<li><label><input name="q39" type="radio" value="A"/> A. Accounts and orgs</label></li>
+<li><label><input name="q39" type="radio" value="B"/> B. General</label></li>
+<li><label><input name="q39" type="radio" value="C"/> C. Notifications and activity</label></li>
+<li><label><input name="q39" type="radio" value="D"/> D. Accessibility</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. General.</strong><br/>In Microsoft Teams, application startup behavior, language, and other core application settings are located in the "General" section of the settings menu.</div>
+</div>
+<!-- Question 40 -->
+<div class="question-block" data-answer="C" data-question="40" data-type="mc">
+<h3>Question 40: Checking Available Memory<span class="question-counter">Question 40 of 71</span></h3>
+<div class="scenario">A customer reports getting "low on memory" errors when running video editing software. Which process will allow the customer to locate the available memory of their device?</div>
+<div class="options">
+<ul>
+<li><label><input name="q40" type="radio" value="A"/> A. Ask the customer to open Command Prompt and type in ipconfig/all and press Enter.</label></li>
+<li><label><input name="q40" type="radio" value="B"/> B. Ask the customer to open Settings and select the Devices tab.</label></li>
+<li><label><input name="q40" type="radio" value="C"/> C. Ask the customer to open Task Manager and select the Performance tab.</label></li>
+<li><label><input name="q40" type="radio" value="D"/> D. Ask the customer to open Event Viewer and select the Applications and Services Log tab.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. Ask the customer to open Task Manager and select the Performance tab.</strong><br/>The Performance tab in Task Manager provides real-time graphs and detailed statistics about system resource usage, including total, used, and available system memory (RAM).</div>
+</div>
+<!-- Question 41 -->
+<div class="question-block" data-answer="D" data-question="41" data-type="mc">
+<h3>Question 41: Diagnosing a DNS Issue<span class="question-counter">Question 41 of 71</span></h3>
+<div class="scenario">An employee can open a website by its IP address but not its name. The `ipconfig` output is shown. Which IP address should you ping to determine what the problem is?</div>
+<img alt="ipconfig output" src="assets/images/image7.jpeg"/>
+<div class="options">
+<ul>
+<li><label><input name="q41" type="radio" value="A"/> A. 192.168.1.254</label></li>
+<li><label><input name="q41" type="radio" value="B"/> B. 192.168.1.253</label></li>
+<li><label><input name="q41" type="radio" value="C"/> C. 192.168.1.130</label></li>
+<li><label><input name="q41" type="radio" value="D"/> D. 192.168.1.1</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: D. 192.168.1.1.</strong><br/>This is a classic DNS resolution issue. The `ipconfig` output shows the DNS Server is <strong>192.168.1.1</strong>. To diagnose the problem, you must test connectivity to the DNS server itself. Pinging this address will determine if the PC can reach the server responsible for name lookups.</div>
+</div>
+<!-- Question 42 -->
+<div class="question-block" data-question="42" data-type="match">
+<h3>Question 42: Increasing iPhone Storage<span class="question-counter">Question 42 of 71</span></h3>
+<div class="scenario">A user has low storage on an iPhone. You need to tell the user how to increase available storage. For each action, select Yes if it helps or No if it does not.</div>
+<table>
+<thead><tr><th>Action</th><th>Answer</th></tr></thead>
+<tbody>
+<tr data-answer="Yes">
+<td>Offload unused apps.</td>
+<td><select name="q42_1"><option value="">Select...</option><option>Yes</option><option>No</option></select></td>
+</tr>
+<tr data-answer="Yes">
+<td>Empty the Recently Deleted album.</td>
+<td><select name="q42_2"><option value="">Select...</option><option>Yes</option><option>No</option></select></td>
+</tr>
+<tr data-answer="Yes">
+<td>Enable Optimize Photos.</td>
+<td><select name="q42_3"><option value="">Select...</option><option>Yes</option><option>No</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Matches:</strong><br/><ul><li><strong>Offload unused apps:</strong> Yes. This removes the app but keeps its data, freeing up significant space.</li><li><strong>Empty Recently Deleted album:</strong> Yes. Deleted photos are kept for 30 days; emptying the album permanently deletes them and reclaims space immediately.</li><li><strong>Enable Optimize Photos:</strong> Yes. This stores full-resolution photos in iCloud and keeps smaller, device-sized versions on the iPhone, saving space.</li></ul></div>
+</div>
+<!-- Question 43 -->
+<div class="question-block" data-answer="C" data-question="43" data-type="mc">
+<h3>Question 43: Type of Virtualization for Remote OS<span class="question-counter">Question 43 of 71</span></h3>
+<div class="question-text">Which type of virtualization allows a user to run one or multiple operating systems that are stored remotely on a central server in a data center?</div>
+<div class="options">
+<ul>
+<li><label><input name="q43" type="radio" value="A"/> A. Network Virtualization</label></li>
+<li><label><input name="q43" type="radio" value="B"/> B. Data Virtualization</label></li>
+<li><label><input name="q43" type="radio" value="C"/> C. Desktop Virtualization</label></li>
+<li><label><input name="q43" type="radio" value="D"/> D. Storage Virtualization</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. Desktop Virtualization.</strong><br/>Desktop Virtualization (also known as VDI - Virtual Desktop Infrastructure) is the technology of hosting a desktop operating system on a centralized server. Users connect to their desktop environment remotely from a client device.</div>
+</div>
+<!-- Question 44 -->
+<div class="question-block" data-answer="A" data-question="44" data-type="mc">
+<h3>Question 44: Handling Sensitive Customer Data<span class="question-counter">Question 44 of 71</span></h3>
+<div class="scenario">A customer support representative receives an email from a client that contains their full name, address, and credit card details and a request to update their billing information. Which action should the representative take?</div>
+<div class="options">
+<ul>
+<li><label><input name="q44" type="radio" value="A"/> A. Store the data in encrypted storage.</label></li>
+<li><label><input name="q44" type="radio" value="B"/> B. Openly share the information with the accounting department.</label></li>
+<li><label><input name="q44" type="radio" value="C"/> C. Print the message and personally deliver it to the accounting department.</label></li>
+<li><label><input name="q44" type="radio" value="D"/> D. Store the data on a personal device.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. Store the data in encrypted storage.</strong><br/>Handling sensitive data like credit card details requires strict security measures. The best practice among the choices is to use encrypted storage, which protects the data from unauthorized access. Sharing openly, printing, or using personal devices are all major security violations. The full process would involve using a secure system to update the billing info and then securely deleting the email, but encryption is the key principle here.</div>
+</div>
+<!-- Question 45 -->
+<div class="question-block" data-answer="C" data-question="45" data-type="mc">
+<h3>Question 45: Purpose of Mobile Device Management (MDM)<span class="question-counter">Question 45 of 71</span></h3>
+<div class="question-text">Why does a company use Mobile Device Management (MDM)?</div>
+<div class="options">
+<ul>
+<li><label><input name="q45" type="radio" value="A"/> A. To allow the company to access the user's personal data.</label></li>
+<li><label><input name="q45" type="radio" value="B"/> B. To track the user's location when at work or traveling for business.</label></li>
+<li><label><input name="q45" type="radio" value="C"/> C. To ensure that mobile devices comply with company policy before accessing the network.</label></li>
+<li><label><input name="q45" type="radio" value="D"/> D. To authenticate users using an authenticator app on a mobile device.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. To ensure that mobile devices comply with company policy before accessing the network.</strong><br/>The primary purpose of MDM is to enforce corporate security policies on mobile devices. This includes things like requiring a passcode, enabling encryption, and having the ability to remotely wipe corporate data if the device is lost or stolen.</div>
+</div>
+<!-- Question 46 -->
+<div class="question-block" data-answer="A" data-question="46" data-type="mc">
+<h3>Question 46: Setting Up Access to a Shared Folder<span class="question-counter">Question 46 of 71</span></h3>
+<div class="scenario">A help desk technician is assisting a customer with setting up access from their Windows computer to a shared company folder. What should the technician do?</div>
+<div class="options">
+<ul>
+<li><label><input name="q46" type="radio" value="A"/> A. Choose a drive letter and specify the path to the shared folder.</label></li>
+<li><label><input name="q46" type="radio" value="B"/> B. Disable the antivirus software temporarily.</label></li>
+<li><label><input name="q46" type="radio" value="C"/> C. Modify the user's account to have administrative privileges.</label></li>
+<li><label><input name="q46" type="radio" value="D"/> D. Change the network profile to public.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. Choose a drive letter and specify the path to the shared folder.</strong><br/>This describes the process of "mapping a network drive." It creates a persistent, easy-to-access link to the shared folder directly within Windows Explorer, assigning it a drive letter (e.g., Z:).</div>
+</div>
+<!-- Question 47 -->
+<div class="question-block" data-answer="C" data-question="47" data-type="mc">
+<h3>Question 47: Documenting a Resolved Incident<span class="question-counter">Question 47 of 71</span></h3>
+<div class="question-text">You resolve a customer's printing issue. How should you document the incident?</div>
+<div class="options">
+<ul>
+<li><label><input name="q47" type="radio" value="A"/> A. "Printer is now printing. Issue is resolved and customer is happy."</label></li>
+<li><label><input name="q47" type="radio" value="B"/> B. "Printing issue resolved. Ticket Complete."</label></li>
+<li><label><input name="q47" type="radio" value="C"/> C. ";Printing issue is resolved. Reinstalled printer drivers and rebooted computer."</label></li>
+<li><label><input name="q47" type="radio" value="D"/> D. "This customer was using the wrong printer and did not know which printer they should use."</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. "Printing issue is resolved. Reinstalled printer drivers and rebooted computer."</strong><br/>Good documentation is specific and factual. It should state the resolution and the exact steps taken to achieve it. This helps with future troubleshooting and knowledge base creation. Options A, B, and D are too vague or unprofessional.</div>
+</div>
+<!-- Question 48 -->
+<div class="question-block" data-answer="D" data-question="48" data-type="mc">
+<h3>Question 48: Cross-Platform USB Drive Issue<span class="question-counter">Question 48 of 71</span></h3>
+<div class="scenario">A customer has a 256 GB USB drive. They can copy files from their Windows work computer to the drive, but cannot copy files from their personal macOS computer to the drive. What should the customer do?</div>
+<div class="options">
+<ul>
+<li><label><input name="q48" type="radio" value="A"/> A. Defragment the USB drive.</label></li>
+<li><label><input name="q48" type="radio" value="B"/> B. Run diagnostics on the USB drive to determine if the file system is corrupt.</label></li>
+<li><label><input name="q48" type="radio" value="C"/> C. Return the USB drive for a replacement.</label></li>
+<li><label><input name="q48" type="radio" value="D"/> D. Format the USB drive with exFAT file system.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: D. Format the USB drive with exFAT file system.</strong><br/>This is a classic file system compatibility issue. The drive is likely formatted as NTFS, which Windows can read/write to, but macOS can only read by default. The exFAT file system is fully compatible (read and write) with both modern Windows and macOS systems, making it the ideal choice for transferring files between them.</div>
+</div>
+<!-- Question 49 -->
+<div class="question-block" data-question="49" data-type="match">
+<h3>Question 49: Resolving Active Directory Login Issues<span class="question-counter">Question 49 of 71</span></h3>
+<div class="scenario">A Windows user on an Active Directory domain cannot log in. For each statement, select True if it is a method to resolve the issue or False if it is not.</div>
+<table>
+<thead><tr><th>Statement</th><th>Answer</th></tr></thead>
+<tbody>
+<tr data-answer="False">
+<td>In the user account properties, select Password never expires.</td>
+<td><select name="q49_1"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+<tr data-answer="True">
+<td>Unlock the user account and have them try their password again.</td>
+<td><select name="q49_2"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+<tr data-answer="True">
+<td>Reset the user's password.</td>
+<td><select name="q49_3"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+<tr data-answer="False">
+<td>Select User must change password at next logon.</td>
+<td><select name="q49_4"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Matches:</strong><br/><ul><li><strong>Password never expires:</strong> False. This is a policy setting, not a direct fix for a current login failure.</li><li><strong>Unlock the account:</strong> True. The account may be locked out due to too many failed attempts. Unlocking it is a direct resolution.</li><li><strong>Reset the password:</strong> True. If the user has forgotten their password, resetting it is a direct resolution.</li><li><strong>User must change password...:</strong> False. This is an option used *with* a password reset, not a standalone solution to a login failure.</li></ul></div>
+</div>
+<!-- Question 50 -->
+<div class="question-block" data-answer="C" data-question="50" data-type="mc">
+<h3>Question 50: Ethical Considerations of AI - Transparency<span class="question-counter">Question 50 of 71</span></h3>
+<div class="question-text">There are several ethical considerations involved when choosing to use artificial intelligence (AI). What does the term "transparency" refer to in relation to those ethical considerations?</div>
+<div class="options">
+<ul>
+<li><label><input name="q50" type="radio" value="A"/> A. Ensuring AI is applied across a wide spectrum of diversity.</label></li>
+<li><label><input name="q50" type="radio" value="B"/> B. Implementing controls to ensure that AI solutions work as intended to help prevent inappropriate use.</label></li>
+<li><label><input name="q50" type="radio" value="C"/> C. Informing a customer when AI is being used to make a decision that could affect them.</label></li>
+<li><label><input name="q50" type="radio" value="D"/> D. Using privacy controls to ensure that personal data usage is allowed.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. Informing a customer when AI is being used to make a decision that could affect them.</strong><br/>In AI ethics, transparency means being open and clear about how and when AI is used, especially in decision-making processes. It involves making the process understandable and disclosing the AI's role to those affected.</div>
+</div>
+<!-- Question 51 -->
+<div class="question-block" data-answer='["A","C","D"]' data-question="51" data-type="ms">
+<h3>Question 51: Best Practices for Help Desk Documentation<span class="question-counter">Question 51 of 71</span></h3>
+<div class="question-text">Which three practices help create clear, concise, and factual documentation for an IT help desk ticket? (Choose 3)</div>
+<div class="options">
+<ul>
+<li><label><input name="q51" type="checkbox" value="A"/> A. Add resolution details.</label></li>
+<li><label><input name="q51" type="checkbox" value="B"/> B. Collect personal data for later identity verification.</label></li>
+<li><label><input name="q51" type="checkbox" value="C"/> C. Write a detailed description of the problem in the ticket body.</label></li>
+<li><label><input name="q51" type="checkbox" value="D"/> D. Assign a category.</label></li>
+<li><label><input name="q51" type="checkbox" value="E"/> E. Write a summarized description of the problem in the ticket body.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answers: A, C, and D.</strong><br/>Good documentation requires: 1) A detailed problem description (C) to understand the issue. 2) Assigning a category (D) for organization and reporting. 3) Adding specific resolution details (A) so others can learn from the solution. A summary (E) is also good (often in the title), but a detailed description is crucial. Collecting unnecessary personal data (B) is bad practice.</div>
+</div>
+<!-- Question 52 -->
+<div class="question-block" data-question="52" data-type="match">
+<h3>Question 52: External Drive Not Appearing in Explorer<span class="question-counter">Question 52 of 71</span></h3>
+<div class="scenario">A customer's external disk drive is not listed in Windows Explorer on one laptop, but works fine on another with the same OS. For each action, select Yes if it might solve the problem and No if it will not.</div>
+<table>
+<thead><tr><th>Action</th><th>Answer</th></tr></thead>
+<tbody>
+<tr data-answer="Yes">
+<td>Enable the drive in Device Manager.</td>
+<td><select name="q52_1"><option value="">Select...</option><option>Yes</option><option>No</option></select></td>
+</tr>
+<tr data-answer="No">
+<td>Format the drive in Disk Management.</td>
+<td><select name="q52_2"><option value="">Select...</option><option>Yes</option><option>No</option></select></td>
+</tr>
+<tr data-answer="No">
+<td>Map the drive to a letter in Windows Explorer.</td>
+<td><select name="q52_3"><option value="">Select...</option><option>Yes</option><option>No</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Matches:</strong><br/><ul><li><strong>Enable in Device Manager:</strong> Yes. The drive might be recognized by the system but disabled. Enabling it would make it accessible.</li><li><strong>Format the drive:</strong> No. Formatting would erase all data and should not be a first step, especially since the drive works on another computer.</li><li><strong>Map the drive:</strong> No. Mapping is for network shares, not for a locally connected external drive that isn't being detected. The issue is detection, not access path.</li></ul></div>
+</div>
+<!-- Question 53 -->
+<div class="question-block" data-question="53" data-type="match">
+<h3>Question 53: Best Practices for Technical Documentation<span class="question-counter">Question 53 of 71</span></h3>
+<div class="scenario">You are updating internal technical documentation. Select True if the statement is a professional best practice and False if it is not.</div>
+<table>
+<thead><tr><th>Statement</th><th>Answer</th></tr></thead>
+<tbody>
+<tr data-answer="False">
+<td>Including visuals is unnecessary, as most documentation is meant for other IT professionals.</td>
+<td><select name="q53_1"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+<tr data-answer="True">
+<td>You should keep all previous documentation materials, problems and solutions.</td>
+<td><select name="q53_2"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+<tr data-answer="True">
+<td>While generative AI can provide information, you should check its work before including it in formal documentation.</td>
+<td><select name="q53_3"><option value="">Select...</option><option>True</option><option>False</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Matches:</strong><br/><ul><li><strong>Visuals unnecessary:</strong> False. Visuals like screenshots and diagrams are extremely helpful for clarity, even for technical professionals.</li><li><strong>Keep previous materials:</strong> True. Historical documentation provides valuable context and can help solve recurring or similar issues.</li><li><strong>Check AI work:</strong> True. Generative AI can make mistakes (";hallucinate"). All information from it must be verified for accuracy before being formalized.</li></ul></div>
+</div>
+<!-- Question 54 -->
+<div class="question-block" data-answer="A" data-question="54" data-type="mc">
+<h3>Question 54: Responding to a Suspected Phishing Email<span class="question-counter">Question 54 of 71</span></h3>
+<div class="scenario">You receive an email from a user with the display name of the president of your company. The email requests that you log into the provided link to fill out a survey by the end of the business day. What should you do?</div>
+<div class="options">
+<ul>
+<li><label><input name="q54" type="radio" value="A"/> A. Call the IT department to verify that the email is valid.</label></li>
+<li><label><input name="q54" type="radio" value="B"/> B. Click the link in the email to fill out the survey.</label></li>
+<li><label><input name="q54" type="radio" value="C"/> C. Check the email address in the signature.</label></li>
+<li><label><input name="q54" type="radio" value="D"/> D. Reply to the sender asking them to verify the email's legitimacy.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. Call the IT department to verify that the email is valid.</strong><br/>This is a potential "whaling" attack (phishing targeting a high-level executive). The safest action is to contact the IT/Security department through a trusted channel (like a phone call) to have them investigate. Do not click the link or reply to the email.</div>
+</div>
+<!-- Question 55 -->
+<div class="question-block" data-answer="D" data-question="55" data-type="mc">
+<h3>Question 55: Troubleshooting a Webcam<span class="question-counter">Question 55 of 71</span></h3>
+<div class="scenario">You receive a call from a user stating that their webcam stopped working. There have been no operating system updates since it was last working. Which action should you tell the user to perform first?</div>
+<div class="options">
+<ul>
+<li><label><input name="q55" type="radio" value="A"/> A. Check the screen resolution of webcam.</label></li>
+<li><label><input name="q55" type="radio" value="B"/> B. Update the webcam driver software.</label></li>
+<li><label><input name="q55" type="radio" value="C"/> C. Rollback the webcam driver software.</label></li>
+<li><label><input name="q55" type="radio" value="D"/> D. Check webcam cable for connectivity.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: D. Check webcam cable for connectivity.</strong><br/>When troubleshooting, always start with the simplest and most common cause. A loose or disconnected cable (physical layer) is a very common reason for a peripheral to suddenly stop working.</div>
+</div>
+<!-- Question 56 -->
+<div class="question-block" data-answer="C" data-question="56" data-type="mc">
+<h3>Question 56: Granting App Permissions on macOS<span class="question-counter">Question 56 of 71</span></h3>
+<div class="scenario">A user reports: "I recently got a prompt on my Mac to give an app permission. I accidentally clicked Deny. Now I can't open the app." Where should they go to grant the necessary permissions?</div>
+<div class="options">
+<ul>
+<li><label><input name="q56" type="radio" value="A"/> A. Passwords &gt; Security Permissions</label></li>
+<li><label><input name="q56" type="radio" value="B"/> B. Users &amp; Groups &gt; Add Group</label></li>
+<li><label><input name="q56" type="radio" value="C"/> C. Privacy and Security</label></li>
+<li><label><input name="q56" type="radio" value="D"/> D. Desktop &amp; Dock</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. Privacy and Security.</strong><br/>On macOS, all application permissions (such as access to the camera, microphone, files, etc.) are managed in the "Privacy &amp; Security" section of System Settings.</div>
+</div>
+<!-- Question 57 -->
+<div class="question-block" data-question="57" data-type="match">
+<h3>Question 57: Safety Procedures for Installing an SSD<span class="question-counter">Question 57 of 71</span></h3>
+<div class="scenario">You are adding a new SSD to a computer. Complete the sentences by selecting the correct safety procedure.</div>
+<table>
+<thead><tr><th>Sentence Part</th><th>Correct Option</th></tr></thead>
+<tbody>
+<tr data-answer="plugged into a grounded outlet and turned off at the power supply">
+<td>Ensure that the computer remains...</td>
+<td><select name="q57_1"><option value="">Select...</option><option>plugged into a grounded outlet and turned off at the power supply</option><option>plugged into an ungrounded outlet and turn on</option></select></td>
+</tr>
+<tr data-answer="touching">
+<td>Discharge static electricity by...</td>
+<td><select name="q57_2"><option value="">Select...</option><option>sitting on a plastic chair</option><option>standing barefoot on carpet</option><option>touching</option></select></td>
+</tr>
+<tr data-answer="before">
+<td>Be sure to ground yourself... installing the new SSD.</td>
+<td><select name="q57_3"><option value="">Select...</option><option>before</option><option>after</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Selections:</strong><br/><ul><li>"...plugged into a grounded outlet and turned off at the power supply." (This keeps the case grounded).</li><li>"...touching" (a metal part of the case to equalize potential).</li><li>"...before" (you handle the sensitive component).</li></ul></div>
+</div>
+<!-- Question 58 -->
+<div class="question-block" data-answer='["C","D"]' data-question="58" data-type="ms">
+<h3>Question 58: Resolving Login Issue After MFA Implementation<span class="question-counter">Question 58 of 71</span></h3>
+<div class="scenario">A user returning from a 30-day vacation cannot log in, though their password is correct and not expired. While they were gone, the company implemented mandatory Multi-Factor Authentication (MFA). Which two actions could resolve the problem? (Choose 2)</div>
+<div class="options">
+<ul>
+<li><label><input name="q58" type="checkbox" value="A"/> A. Set the user's password to never expire.</label></li>
+<li><label><input name="q58" type="checkbox" value="B"/> B. Tell the user to change their password to one that meets complexity requirements.</label></li>
+<li><label><input name="q58" type="checkbox" value="C"/> C. Tell the user to install the company's authenticator app.</label></li>
+<li><label><input name="q58" type="checkbox" value="D"/> D. Tell the user to add a phone number to their account for SMS validation.</label></li>
+<li><label><input name="q58" type="checkbox" value="E"/> E. Unlock the user's account.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answers: C and D.</strong><br/>The problem is that the user has not set up an MFA factor. To resolve this, they need to enroll a second factor. The two most common methods are using an authenticator app (C) or setting up SMS/text message validation (D).</div>
+</div>
+<!-- Question 59 -->
+<div class="question-block" data-question="59" data-type="match">
+<h3>Question 59: Configuring Power Management Settings<span class="question-counter">Question 59 of 71</span></h3>
+<div class="scenario">Configure a laptop's power settings to meet these requirements: Display off after 15 mins of inactivity. Sleep after 30 mins of inactivity. Never hibernate.</div>
+<div class="options">
+<p>Select the correct options in the Power &amp; Sleep settings window.</p>
+<table>
+<thead><tr><th>Setting</th><th>Value</th></tr></thead>
+<tbody>
+<tr data-answer="15 minutes">
+<td>On battery power, turn off after</td>
+<td><select name="q59_1"><option value="">Select...</option><option>15 minutes</option><option>30 minutes</option><option>Never</option></select></td>
+</tr>
+<tr data-answer="15 minutes">
+<td>When plugged in, turn off after</td>
+<td><select name="q59_2"><option value="">Select...</option><option>15 minutes</option><option>30 minutes</option><option>Never</option></select></td>
+</tr>
+<tr data-answer="30 minutes">
+<td>On battery power, PC goes to sleep after</td>
+<td><select name="q59_3"><option value="">Select...</option><option>15 minutes</option><option>30 minutes</option><option>Never</option></select></td>
+</tr>
+<tr data-answer="30 minutes">
+<td>When plugged in, PC goes to sleep after</td>
+<td><select name="q59_4"><option value="">Select...</option><option>15 minutes</option><option>30 minutes</option><option>Never</option></select></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="explanation"><strong>Correct Selections:</strong><br/>The requirements apply regardless of power source.<ul><li><strong>Screen off after:</strong> 15 minutes (for both "On battery" and "When plugged in").</li><li><strong>PC goes to sleep after:</strong> 30 minutes (for both "On battery" and "When plugged in").</li><li>Hibernate settings would be configured in advanced power options and set to "Never".</li></ul></div>
+</div>
+<!-- Question 60 -->
+<div class="question-block" data-answer='["B","E"]' data-question="60" data-type="ms">
+<h3>Question 60: Information from the `ipconfig` Command<span class="question-counter">Question 60 of 71</span></h3>
+<div class="question-text">A network technician runs the `ipconfig` command on a client's Windows computer. Which two pieces of information can they expect to obtain? (Choose 2)</div>
+<div class="options">
+<ul>
+<li><label><input name="q60" type="checkbox" value="A"/> A. The encryption type used by the Wi-Fi network.</label></li>
+<li><label><input name="q60" type="checkbox" value="B"/> B. The IP address assigned to the computer.</label></li>
+<li><label><input name="q60" type="checkbox" value="C"/> C. The wireless network SSID.</label></li>
+<li><label><input name="q60" type="checkbox" value="D"/> D. The firewall settings currently applied.</label></li>
+<li><label><input name="q60" type="checkbox" value="E"/> E. The default gateway address configured on the computer.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answers: B and E.</strong><br/>The `ipconfig` command displays the core TCP/IP network configuration for all adapters. This includes the computer's IP address, subnet mask, and the default gateway address. SSID and encryption type are found with `netsh wlan show interfaces`.</div>
+</div>
+<!-- Question 61 -->
+<div class="question-block" data-answer="D" data-question="61" data-type="mc">
+<h3>Question 61: Defining a Service Level Agreement (SLA)<span class="question-counter">Question 61 of 71</span></h3>
+<div class="question-text">Which document outlines a commitment between an organization and a customer, including details of the service, the standards the provider must adhere to, and compensation for the successful completion of those milestones?</div>
+<div class="options">
+<ul>
+<li><label><input name="q61" type="radio" value="A"/> A. Key Performance Indicators</label></li>
+<li><label><input name="q61" type="radio" value="B"/> B. Incident Report</label></li>
+<li><label><input name="q61" type="radio" value="C"/> C. Service Level Indicator</label></li>
+<li><label><input name="q61" type="radio" value="D"/> D. Service Level Agreement</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: D. Service Level Agreement.</strong><br/>A Service Level Agreement (SLA) is a formal contract that defines the level of service, responsibilities, and metrics between a service provider and a client. KPIs and SLIs are metrics used within an SLA, but the SLA is the overall agreement document.</div>
+</div>
+<!-- Question 62 -->
+<div class="question-block" data-question="62" data-type="order">
+<h3>Question 62: Ordering the Problem-Solving Steps<span class="question-counter">Question 62 of 71</span></h3>
+<div class="scenario">Move all the problem-solving steps to the answer area and place them in the correct order.</div>
+<div class="options">
+<p><strong>Correct Order:</strong></p>
+<ol>
+<li>Gather detailed information.</li>
+<li>Define the problem.</li>
+<li>Identify a probable cause of failure.</li>
+<li>Devise a plan to resolve the problem.</li>
+<li>Make necessary changes to implement the plan.</li>
+<li>Observe the results of the changes.</li>
+<li>If the problem is not resolved, repeat the process.</li>
+<li>Document the changes made to resolve the problem.</li>
+</ol>
+</div>
+<div class="explanation"><strong>Correct Order:</strong><br/>The standard IT troubleshooting methodology follows this logical progression from understanding the issue to documenting the final solution. Note that some models combine steps 1 and 2, but this sequence is a widely accepted standard.</div>
+</div>
+<!-- Question 63 -->
+<div class="question-block" data-answer='["A","C"]' data-question="63" data-type="ms">
+<h3>Question 63: Negative Effects of Manual IP Configuration<span class="question-counter">Question 63 of 71</span></h3>
+<div class="scenario">In an office that uses a DHCP server, a user's computer was configured with a manual IP address. Which two possible negative effects could this have? (Choose 2)</div>
+<div class="options">
+<ul>
+<li><label><input name="q63" type="checkbox" value="A"/> A. Another user might lose network connectivity.</label></li>
+<li><label><input name="q63" type="checkbox" value="B"/> B. The PC may experience a failed ping test to its own IP.</label></li>
+<li><label><input name="q63" type="checkbox" value="C"/> C. The PC may lose complete access to the network.</label></li>
+<li><label><input name="q63" type="checkbox" value="D"/> D. The PC may connect to a different DHCP server.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answers: A and C.</strong><br/>1) If the manually assigned IP address is already in use by another device (assigned by DHCP), it will cause an IP address conflict, and one or both devices (A) will lose connectivity. 2) If the manually assigned IP address is on the wrong subnet or has the wrong gateway/DNS settings, the PC will not be able to communicate with the network (C).</div>
+</div>
+<!-- Question 64 -->
+<div class="question-block" data-question="64" data-type="match">
+<h3>Question 64: Diagnosing a Scanner Issue in Device Manager<span class="question-counter">Question 64 of 71</span></h3>
+<div class="scenario">A customer cannot scan. In Device Manager, the scanner is listed under "Other devices". What is the problem and what should you do?</div>
+<table>
+<thead><tr><th>Question</th><th>Answer</th></tr></thead>
+<tbody>
+<tr data-answer="The appropriate device drivers are not installed.">
+<td>What is the problem?</td>
+<td><select name="q64_1"><option value="">Select...</option><option>The scanner is not connected to the correct port.</option><option>The appropriate device drivers are not installed.</option><option>The scanner is not recognized by the operating system.</option></select></td>
+</tr>
+<tr data-answer="Update the driver.">
+<td>What should you do in Device Manager to resolve the issue?</td>
+<td><select name="q64_2"><option value="">Select...</option><option>Disable the device.</option><option>Update the driver.</option><option>Connect the scanner to a different port.</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Selections:</strong><br/><ul><li><strong>Problem:</strong> The appropriate device drivers are not installed. When Windows recognizes a device but doesn't know what it is or how to control it, it places it under "Other devices". This is a classic sign of a missing driver.</li><li><strong>Solution:</strong> Update the driver. You need to install the correct driver software so that Windows can properly communicate with the scanner.</li></ul></div>
+</div>
+<!-- Question 65 -->
+<div class="question-block" data-answer="D" data-question="65" data-type="mc">
+<h3>Question 65: Example of a Strong Password<span class="question-counter">Question 65 of 71</span></h3>
+<div class="scenario">Provide an example of a strong password based on these guidelines: 8-15 chars, lowercase letters, at least 2 numbers, must begin and end with a letter, special chars allowed are - _ # @.</div>
+<div class="options">
+<ul>
+<li><label><input name="q65" type="radio" value="A"/> A. dkku546@</label></li>
+<li><label><input name="q65" type="radio" value="B"/> B. j546h!Gg</label></li>
+<li><label><input name="q65" type="radio" value="C"/> C. ywm546q</label></li>
+<li><label><input name="q65" type="radio" value="D"/> D. mkn546#f</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: D. mkn546#f.</strong><br/>Let's check the rules: A fails (ends with special char). B fails (contains '!' which is not allowed, contains uppercase). C fails (no special char, though the question implies one is needed for strength). D passes all rules: begins and ends with a letter, is 8 characters long, contains lowercase letters, has 3 numbers, and uses an allowed special character (#).</div>
+</div>
+<!-- Question 66 -->
+<div class="question-block" data-answer="D" data-question="66" data-type="mc">
+<h3>Question 66: Ensuring Accuracy in Technical Research<span class="question-counter">Question 66 of 71</span></h3>
+<div class="question-text">When researching a technical issue and updating internal documentation, what is the best approach to ensure the information you retrieve is accurate and reliable?</div>
+<div class="options">
+<ul>
+<li><label><input name="q66" type="radio" value="A"/> A. Only use information from personal blogs.</label></li>
+<li><label><input name="q66" type="radio" value="B"/> B. Select the first/top website that appears in the search results.</label></li>
+<li><label><input name="q66" type="radio" value="C"/> C. Ask a co-worker for their opinion on the search results.</label></li>
+<li><label><input name="q66" type="radio" value="D"/> D. Verify information using multiple sources.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: D. Verify information using multiple sources.</strong><br/>The best practice for research is to cross-reference information from multiple reputable sources (e.g., official vendor documentation, established technical forums, professional articles). This helps confirm accuracy and provides a more complete understanding.</div>
+</div>
+<!-- Question 67 -->
+<div class="question-block" data-answer="A" data-question="67" data-type="mc">
+<h3>Question 67: Next Step in Problem-Solving Process<span class="question-counter">Question 67 of 71</span></h3>
+<div class="scenario">A technician is troubleshooting a WiFi issue. After defining the problem and gathering info, they suspect a misconfiguration. What should the technician do next?</div>
+<div class="options">
+<ul>
+<li><label><input name="q67" type="radio" value="A"/> A. Implement a plan by changing the user’s network settings to match the company standard.</label></li>
+<li><label><input name="q67" type="radio" value="B"/> B. Resolve the issue by restarting the wireless access point.</label></li>
+<li><label><input name="q67" type="radio" value="C"/> C. Document the problem and solution in the company’s IT knowledge base.</label></li>
+<li><label><input name="q67" type="radio" value="D"/> D. Consider the probable cause for the failure by checking whether other users are affected.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. Implement a plan by changing the user’s network settings to match the company standard.</strong><br/>According to the problem-solving model, after identifying a probable cause and devising a plan (the plan is to correct the misconfiguration), the next step is to implement that plan. Changing the settings is the implementation step.</div>
+</div>
+<!-- Question 68 -->
+<div class="question-block" data-answer="C" data-question="68" data-type="mc">
+<h3>Question 68: Verifying Identity to Prevent Social Engineering<span class="question-counter">Question 68 of 71</span></h3>
+<div class="scenario">You receive an email request for personal information. You need to make sure you are working with the right individual to avoid a social engineering attempt. Which step should you take?</div>
+<div class="options">
+<ul>
+<li><label><input name="q68" type="radio" value="A"/> A. Respond to the email request from the individual to ask them for personal information.</label></li>
+<li><label><input name="q68" type="radio" value="B"/> B. Allow the individual to volunteer to share identity information.</label></li>
+<li><label><input name="q68" type="radio" value="C"/> C. Use company approved methods to confirm the individual's identity.</label></li>
+<li><label><input name="q68" type="radio" value="D"/> D. Share personal account information and ask the individual to confirm it.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: C. Use company approved methods to confirm the individual's identity.</strong><br/>Security policies dictate that identity must be verified using established, approved procedures (e.g., asking specific security questions, using an out-of-band verification method). Never trust information provided by the requester or volunteer information yourself.</div>
+</div>
+<!-- Question 69 -->
+<div class="question-block" data-question="69" data-type="match">
+<h3>Question 69: Matching Video Interfaces to Descriptions<span class="question-counter">Question 69 of 71</span></h3>
+<div class="scenario">Match each video interface to its description.</div>
+<table>
+<thead><tr><th>Description</th><th>Video Interface</th></tr></thead>
+<tbody>
+<tr data-answer="VGA">
+<td>Carries only analog video data</td>
+<td><select name="q69_1"><option value="">Select...</option><option>DisplayPort</option><option>DVI</option><option>HDMI</option><option>VGA</option></select></td>
+</tr>
+<tr data-answer="DVI">
+<td>Handles digital video signals; often has screws to lock into place</td>
+<td><select name="q69_2"><option value="">Select...</option><option>DisplayPort</option><option>DVI</option><option>HDMI</option><option>VGA</option></select></td>
+</tr>
+<tr data-answer="DisplayPort">
+<td>Provides uncompressed, high-quality digital video; often has a locking mechanism</td>
+<td><select name="q69_3"><option value="">Select...</option><option>DisplayPort</option><option>DVI</option><option>HDMI</option><option>VGA</option></select></td>
+</tr>
+<tr data-answer="HDMI">
+<td>Transmits high quality video and audio through a single cable</td>
+<td><select name="q69_4"><option value="">Select...</option><option>DisplayPort</option><option>DVI</option><option>HDMI</option><option>VGA</option></select></td>
+</tr>
+</tbody>
+</table>
+<div class="explanation"><strong>Correct Matches:</strong><br/><ul><li><strong>Analog only:</strong> VGA</li><li><strong>Digital with screws:</strong> DVI</li><li><strong>Digital with lock:</strong> DisplayPort</li><li><strong>Digital video and audio:</strong> HDMI</li></ul></div>
+</div>
+<!-- Question 70 -->
+<div class="question-block" data-answer="A" data-question="70" data-type="mc">
+<h3>Question 70: Trouble Ticket Documentation Best Practices<span class="question-counter">Question 70 of 71</span></h3>
+<div class="scenario">Review the trouble ticket below. Which part of the ticket follows documentation best practices?
+<pre>Unique Identifier: #00126
+Customer Information: Joe P Public. jpp@sunsetweb.com
+Date and Time: April 22, 2024, 11:15 AM
+Issue Category: Network/Connectivity
+Priority Level: Critical
+Ticket Status: Open
+Troubleshooting Steps Attempted: Confirmed stable internet access on other floors, isolated the issue to the third floor... Error code 101 seen on third floor distribution routers.
+</pre>
+</div>
+<div class="options">
+<ul>
+<li><label><input name="q70" type="radio" value="A"/> A. The Troubleshooting Steps Attempted section.</label></li>
+<li><label><input name="q70" type="radio" value="B"/> B. The Customer Information section.</label></li>
+<li><label><input name="q70" type="radio" value="C"/> C. The Priority Level.</label></li>
+<li><label><input name="q70" type="radio" value="D"/> D. The Problem Description (which is empty).</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: A. The Troubleshooting Steps Attempted section.</strong><br/>This section is a good example of documentation because it is specific, factual, and details the actions taken so far ("confirmed stable access," "isolated the issue," "Error code 101 seen"). This provides clear, actionable information for the next person who works on the ticket.</div>
+</div>
+<!-- Question 71 -->
+<div class="question-block" data-answer="B" data-question="71" data-type="mc">
+<h3>Question 71: Resolving File Edit Permissions<span class="question-counter">Question 71 of 71</span></h3>
+<div class="scenario">John cannot edit the file Test.docx on a shared drive, but can edit other files. You review the file's permissions. Which change will allow John to access and edit the file, while retaining account-level control?</div>
+<img alt="File Permissions" src="assets/images/image8.jpeg"/>
+<div class="options">
+<ul>
+<li><label><input name="q71" type="radio" value="A"/> A. Move the file to a different folder on the same shared drive.</label></li>
+<li><label><input name="q71" type="radio" value="B"/> B. Modify the NTFS permissions on the file to grant John 'Modify' or 'Full Control' access.</label></li>
+<li><label><input name="q71" type="radio" value="C"/> C. Modify the share permissions on the folder to give John full control.</label></li>
+<li><label><input name="q71" type="radio" value="D"/> D. Tell John to modify the NTFS permissions on the file himself.</label></li>
+</ul>
+</div>
+<div class="explanation"><strong>Correct Answer: B. Modify the NTFS permissions on the file to grant John 'Modify' or 'Full Control' access.</strong><br/>The issue is specific to one file, so the solution must be at the file level. Since John can access other files, the share permissions are correct. The problem lies with the file's NTFS permissions. Granting John's account the 'Modify' permission on that specific file is the correct and most direct solution.</div>
+</div>
+</section>
+<button class="submit-btn" type="submit">Submit Quiz</button>
+</form>
+<div id="results-container"></div>
+<div class="reference-container">
+			<div class="reference-section">
+				<h3 class="reference-title">Reference</h3>
+				<div class="reference-list">
+					
+					<div class="reference-item">
+						<span class="reference-number">[1]</span>
+						<div class="reference-content">
+							<div class="reference-text-container">
+								<span class="reference-text">CCST final keywords updated-1</span>
+									
+							</div>
+							<a href="https://api.skywork.ai/chat/chat/upload_file?file_id=2008939721830227968" class="reference-link" target="_blank">
+								https://api.skywork.ai/chat/chat/upload_file?file_id=2008939721830227968
+							</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div></div>
+
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/quiz.js"></script>
+</body>
+</html>
