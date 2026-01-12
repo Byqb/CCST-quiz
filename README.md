@@ -2,7 +2,7 @@
 
 A premium, interactive web assessment designed for IT Support professionals and help desk technicians. This quiz covers 71 comprehensive questions spanning troubleshooting, networking, security, and OS management.
 
-![Quiz Preview](assets/images/image1.png)
+
 
 ## ✨ Modern UI/UX Features
 
