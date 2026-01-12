@@ -1,7 +1,7 @@
 // Authentication Module
 const Auth = {
     checkAuth() {
-        const isAuthenticated = sessionStorage.getItem('isAuthenticated');
+        const isAuthenticated = localStorage.getItem('isAuthenticated');
         const authModal = document.getElementById('authModal');
         const mainContent = document.getElementById('mainContent');
 
@@ -11,6 +11,7 @@ const Auth = {
         } else {
             authModal.classList.add('hidden');
             mainContent.classList.add('visible');
+            window.dispatchEvent(new Event('quiz-start'));
         }
     },
 
@@ -24,10 +25,11 @@ const Auth = {
         const correctPassword = '3mkmYusuf';
 
         if (username === correctUsername && password === correctPassword) {
-            sessionStorage.setItem('isAuthenticated', 'true');
+            localStorage.setItem('isAuthenticated', 'true');
             document.getElementById('authModal').classList.add('hidden');
             document.getElementById('mainContent').classList.add('visible');
             document.getElementById('authError').style.display = 'none';
+            window.dispatchEvent(new Event('quiz-start'));
         } else {
             document.getElementById('authError').style.display = 'block';
             document.getElementById('password').value = '';
